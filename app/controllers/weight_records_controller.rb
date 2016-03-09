@@ -1,0 +1,3 @@
+class WeightRecordsController < ApplicationController
+	
+end
