@@ -1,0 +1,4 @@
+class HeightStat < Stat
+
+
+end

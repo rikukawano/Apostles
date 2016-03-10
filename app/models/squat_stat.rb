@@ -1,0 +1,4 @@
+class SquatStat < Stat
+
+
+end
