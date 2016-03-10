@@ -1,4 +1,0 @@
-class BenchpressStat < Stat
-
-
-end
