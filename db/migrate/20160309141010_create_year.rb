@@ -1,7 +1,7 @@
 class CreateYear < ActiveRecord::Migration
   def change
     create_table :year do |t|
-    	t.string :year
+    	t.string :name
 
       t.timestamps null: false
     end
