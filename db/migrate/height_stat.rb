@@ -1,4 +1,0 @@
-class HeightStat < Stat
-
-
-end
