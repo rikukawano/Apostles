@@ -1,0 +1,4 @@
+class WeightStat < Stat
+
+
+end

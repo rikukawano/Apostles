@@ -1,6 +1,6 @@
-class CreatePlayers < ActiveRecord::Migration
+class CreatePlayer < ActiveRecord::Migration
   def change
-    create_table :players do |t|
+    create_table :player do |t|
     	t.string :name
     	
 

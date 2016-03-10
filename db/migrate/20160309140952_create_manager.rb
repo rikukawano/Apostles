@@ -1,6 +1,6 @@
-class CreateManagers < ActiveRecord::Migration
+class CreateManager < ActiveRecord::Migration
   def change
-    create_table :managers do |t|
+    create_table :manager do |t|
     	t.string :name
 
       t.timestamps null: false
