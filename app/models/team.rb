@@ -1,3 +1,3 @@
 class Team < Manager
-	belongs_to :managers
+	has_many :managers
 end

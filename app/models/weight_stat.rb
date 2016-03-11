@@ -1,4 +1,4 @@
 class WeightStat < Stat
-	belongs_to :stats
+	belongs_to :stat
 
 end
