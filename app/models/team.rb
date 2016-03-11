@@ -1,3 +1,3 @@
-class Team < Manager
+class Team < ActiveRecord::Base
 	has_many :managers
 end
