@@ -1,0 +1,104 @@
+	.background {
+		background: url(image_path('background1.jpg')) no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		-webkit-filter: blur(10px); 
+		z-index: -1;
+	}
+
+	.signin-form {
+	    height: 320px;
+	    width: 400px;
+	    padding: 10px 5px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 15%;
+	}
+
+	h1 {
+		font-family: 'Graduate', cursive;
+		letter-spacing: -3px;
+		font-size: 80px;
+		font-weight: bold;
+		margin: 2px 2px 30px;
+		color: #FF9900;
+		margin-left: 10px;
+		-moz-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+	}
+
+	input.email,
+	input.password {
+		width: 300px;
+		height: 40px;
+	    font-size: 16px;
+	    padding-left: 5px;
+	    position: relative;
+	    border: none;
+	    font-family: 'Roboto', sans-serif;
+	}
+
+	input.email {
+		top: -20px;
+		left: 45px;
+	}
+
+	input.password {
+		top: -10px;
+		left: 45px;
+	}
+
+	.btn.btn-signin {
+	    background-color: #009900;
+	    font-family: 'Roboto', sans-serif;
+	    font-weight: 700;
+	    font-size: 20px;
+	    color: white;
+	    position:relative;
+	    margin-top: 2%;
+		left: 43px;
+	    height: 40px;
+	    width: 310px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    border: 2px solid white;
+	    -o-transition: all 0.218s;
+	    -moz-transition: all 0.218s;
+	    -webkit-transition: all 0.218s;
+	    transition: all 0.218s;
+	}
+
+	.btn.btn-signin:hover,
+	.btn.btn-signin:active,
+	.btn.btn-signin:focus {
+    	background-color: white;
+    	color: #009900;
+	}
+
+	#remember {
+		color: #F0F0F0;
+		position: relative;
+		margin-top: 8px;
+		left: 42px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.forgot-password {
+		position: relative;
+		left: 42px;
+    	color: #0099FF;
+    	font-family: 'Roboto', sans-serif;
+	}
+
+	.forgot-password:hover,
+	.forgot-password:active,
+	.forgot-password:focus {
+	    color: #F0F0F0;
+	}
