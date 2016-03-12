@@ -4,7 +4,8 @@ class CreateManagers < ActiveRecord::Migration
     	t.belongs_to :team, index: true
     	t.string :name
 		t.timestamps null: false
-
+	end
+	
 	create_table :team do |t|
 		t.string :name
     end
