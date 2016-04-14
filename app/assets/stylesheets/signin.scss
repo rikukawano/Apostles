@@ -1,14 +1,5 @@
-	.background {
-		background: url(image_path('background1.jpg')) no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		position: fixed;
-		-webkit-filter: blur(10px); 
-		z-index: -1;
+	html {
+		background-color: green;
 	}
 
 	.signin-form {
@@ -22,15 +13,12 @@
 
 	h1 {
 		font-family: 'Graduate', cursive;
-		letter-spacing: -3px;
-		font-size: 80px;
+		letter-spacing: -1px;
+		font-size: 85px;
 		font-weight: bold;
 		margin: 2px 2px 30px;
 		color: #FF9900;
 		margin-left: 10px;
-		-moz-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-		-webkit-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-		text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
 	}
 
 	input.email,
@@ -38,10 +26,12 @@
 		width: 300px;
 		height: 40px;
 	    font-size: 16px;
+	    font-family: 'Roboto', sans-serif;
+	    color: #C0C0C0;
 	    padding-left: 5px;
 	    position: relative;
-	    border: none;
-	    font-family: 'Roboto', sans-serif;
+	    border: 2px solid white;
+	    border-radius: 3px;
 	}
 
 	input.email {
@@ -54,39 +44,40 @@
 		left: 45px;
 	}
 
-	.btn.btn-signin {
+	::webkit-input-placeholder {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.button {
 	    background-color: #009900;
 	    font-family: 'Roboto', sans-serif;
 	    font-weight: 700;
 	    font-size: 20px;
 	    color: white;
 	    position:relative;
-	    margin-top: 2%;
-		left: 43px;
+		left: 44px;
 	    height: 40px;
 	    width: 310px;
-	    -moz-border-radius: 3px;
-	    -webkit-border-radius: 3px;
 	    border-radius: 3px;
-	    border: 2px solid white;
+	    border: 2px solid #009900;
 	    -o-transition: all 0.218s;
 	    -moz-transition: all 0.218s;
 	    -webkit-transition: all 0.218s;
 	    transition: all 0.218s;
 	}
 
-	.btn.btn-signin:hover,
-	.btn.btn-signin:active,
-	.btn.btn-signin:focus {
+	.button:hover,
+	.button:active,
+	.button:focus {
     	background-color: white;
     	color: #009900;
 	}
 
 	#remember {
-		color: #F0F0F0;
+		color: white;
 		position: relative;
 		margin-top: 8px;
-		left: 42px;
+		left: 40px;
 		font-family: 'Roboto', sans-serif;
 	}
 

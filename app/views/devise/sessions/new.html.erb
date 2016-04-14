@@ -1,13 +1,11 @@
-  <div class="background"></div>
-
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="signin-form">
           <h1>Apostles</h1>
           <form>
-            <%= f.email_field :email, autofocus: true, class: "email" %>
-            <%= f.password_field :password, autocomplete: "off", class: "password" %>
+            <%= f.email_field :email, autofocus: true, class: "email", placeholder: "Username" %>
+            <%= f.password_field :password, autocomplete: "off", class: "password", placeholder: "Password" %>
 
-            <%= f.submit "Sign In", class: "btn btn-signin" %>
+            <%= f.submit "Sign In", class: "button" %>
             
             <% if devise_mapping.rememberable? -%>
               <div id="remember" class="checkbox">
