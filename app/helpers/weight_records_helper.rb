@@ -1,2 +1,0 @@
-module WeightRecordsHelper
-end

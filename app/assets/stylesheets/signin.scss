@@ -1,0 +1,95 @@
+	html {
+		background-color: green;
+	}
+
+	.signin-form {
+	    height: 320px;
+	    width: 400px;
+	    padding: 10px 5px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 15%;
+	}
+
+	h1 {
+		font-family: 'Graduate', cursive;
+		letter-spacing: -1px;
+		font-size: 85px;
+		font-weight: bold;
+		margin: 2px 2px 30px;
+		color: #FF9900;
+		margin-left: 10px;
+	}
+
+	input.email,
+	input.password {
+		width: 300px;
+		height: 40px;
+	    font-size: 16px;
+	    font-family: 'Roboto', sans-serif;
+	    color: #C0C0C0;
+	    padding-left: 5px;
+	    position: relative;
+	    border: 2px solid white;
+	    border-radius: 3px;
+	}
+
+	input.email {
+		top: -20px;
+		left: 45px;
+	}
+
+	input.password {
+		top: -10px;
+		left: 45px;
+	}
+
+	::webkit-input-placeholder {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.button {
+	    background-color: #009900;
+	    font-family: 'Roboto', sans-serif;
+	    font-weight: 700;
+	    font-size: 20px;
+	    color: white;
+	    position:relative;
+		left: 44px;
+	    height: 40px;
+	    width: 310px;
+	    border-radius: 3px;
+	    border: 2px solid #009900;
+	    -o-transition: all 0.218s;
+	    -moz-transition: all 0.218s;
+	    -webkit-transition: all 0.218s;
+	    transition: all 0.218s;
+	}
+
+	.button:hover,
+	.button:active,
+	.button:focus {
+    	background-color: white;
+    	color: #009900;
+	}
+
+	#remember {
+		color: white;
+		position: relative;
+		margin-top: 8px;
+		left: 40px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.forgot-password {
+		position: relative;
+		left: 42px;
+    	color: #0099FF;
+    	font-family: 'Roboto', sans-serif;
+	}
+
+	.forgot-password:hover,
+	.forgot-password:active,
+	.forgot-password:focus {
+	    color: #F0F0F0;
+	}
