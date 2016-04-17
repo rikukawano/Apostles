@@ -2,6 +2,10 @@
 		background-color: green;
 	}
 
+	body {
+		background-color: green;
+	}
+
 	.signin-form {
 	    height: 320px;
 	    width: 400px;
@@ -23,7 +27,7 @@
 
 	input.email,
 	input.password {
-		width: 300px;
+		width: 310px;
 		height: 40px;
 	    font-size: 16px;
 	    font-family: 'Roboto', sans-serif;
@@ -76,14 +80,13 @@
 	#remember {
 		color: white;
 		position: relative;
-		margin-top: 8px;
-		left: 40px;
+		left: 44px;
 		font-family: 'Roboto', sans-serif;
 	}
 
 	.forgot-password {
 		position: relative;
-		left: 42px;
+		left: 44px;
     	color: #0099FF;
     	font-family: 'Roboto', sans-serif;
 	}
