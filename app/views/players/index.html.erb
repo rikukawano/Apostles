@@ -1,0 +1,39 @@
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <a class="navbar-brand" href="#">Apostles</a>
+  <button type="button" class="btn btn-primary data-toggle="modal" data-target="#myModal""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Add Player</button>
+</nav>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel">NEW Player</h4>
+      </div>
+      <% simple_form_for Player.new do |f| %>
+        <div class="modal-body">
+        <%= f.input :name %>
+        <%= f.input :year %>
+        <%= f.input :number %>
+        <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% @players.each do |player| %>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3><%= player.description %></h3>
+    <h4 class="pull-right"><%= player.author %></h4>
+    <br>
+    <%= link_to 'Delete', player_path(player), method: :delete, class: 'btn btn-sm pull-left', data: {confirm: "Are you sure?"} %>
+    <%= link_to 'Revise', edit_player_path(player), class: 'btn btn-sm pull-left' %>
+    </div>
+  </div>
+<% end %>
