@@ -6,7 +6,7 @@ class PlayersController < ApplicationController
 	def new 
 		@player = Player.new
 	end
-	
+
 	def create
 		@player = Player.create(player_params)
 		redirect_to root_path
