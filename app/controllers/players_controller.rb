@@ -18,17 +18,14 @@ class PlayersController < ApplicationController
 
 	def update
 		@player = Player.find(params[:id])
-		if @player.update(player_params)
-			redirect_to root_path
-		else
-			redirect_to edit_player_path(params[:id])
-		end
+		return redirect_to root_path if @player.update(player_params)
+		redirect_to edit_player_path(params[:id])
 	end
 
 	def destroy
 		@player = Player.find(params[:id])
 		@player.destroy
-		redirect_to :back
+		redirect_to players_path
 	end
 
 	def player_params
