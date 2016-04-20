@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+  	<h2>Edit Player</h2>
+
+	<%= simple_form_for @player, method: :put do |f| %>
+	        <%= f.input :name %>
+	        <%= f.input :year %>
+	        <%= f.input :number %>
+		<%= f.submit 'Update', class: 'btn btn_primary' %>
+	<% end %>
+    </div>
+  </div>
