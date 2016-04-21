@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160311132222) do
+ActiveRecord::Schema.define(version: 20160418073324) do
 
   create_table "benchpress_stat", force: :cascade do |t|
     t.integer "stat_id"
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(version: 20160311132222) do
   end
 
   add_index "managers", ["team_id"], name: "index_managers_on_team_id"
+
+  create_table "players", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.string   "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "squat_stat", force: :cascade do |t|
     t.integer "stat_id"

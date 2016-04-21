@@ -1,3 +1,3 @@
 class Player < ActiveRecord::Base
-	has_many :stats
+	has_one :stat
 end
